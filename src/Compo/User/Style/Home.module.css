@@ -1,0 +1,58 @@
+.homeContainer {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Welcome Header with Background Image */
+.welcomeHeader {
+  background-image: url("https://media.istockphoto.com/id/1220573371/photo/minimal-work-space-creative-flat-lay-photo-of-workspace-desk-top-view-office-desk-with-laptop.jpg?s=612x612&w=0&k=20&c=xmrSzPD4LCRhPD4L5TlttC88sSYe9Pc3J2ZnxCMzzyQ=");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  padding: 50px;
+  border-radius: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Space Between Header and Categories */
+.spaceBetween {
+  height: 20px;
+}
+
+/* Category Wrapper (No Overflow, Keeps Infinite Loop Clean) */
+.categoryWrapper {
+  width: 100%;
+  overflow: hidden;
+  padding: 10px 0;
+  position: relative;
+  white-space: nowrap;
+}
+
+/* Category Container (Seamless Infinite Scrolling) */
+.categoryContainer {
+  display: flex;
+  white-space: nowrap;
+  width: max-content;
+  gap: 15px; /* ✅ Added space between boxes */
+}
+
+/* Category Box (With Space Between) */
+.categoryBox {
+  flex: 0 0 auto;
+  padding: 15px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: transform 0.3s ease-in-out;
+  min-width: 150px;
+  text-align: center;
+  margin-right: 15px; /* ✅ Ensures space between each box */
+}
+
+/* Hover Effect */
+.categoryBox:hover {
+  transform: scale(1.1);
+}

@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Roboto:wght@300;400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Roboto:wght@300;400;700&display=swap');
+
+.aboutContainer {
+  max-width: 900px;
+  margin: auto;
+  margin-top: 50px;
+  padding: 40px;
+  text-align: center;
+  background: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Card Layout */
+.cardContainer {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Individual Card */
+.card {
+  background: rgb(255, 255, 255);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  min-width: 250px;
+  max-width: 300px;
+  text-align: left;
+}
+
+.card h2, .card h5 {
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+.card p, .card ul {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* Small Button Outside Cards */
+.buttonContainer {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.smallBtn {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px; /* Smaller button */
+  font-size: 15px; /* Smaller font */
+  border-radius: 4px;
+  cursor: pointer;
+  
+}
+
+.smallBtn:hover {
+  background: #0056b3;
+  transform: scale(1.05);
+}

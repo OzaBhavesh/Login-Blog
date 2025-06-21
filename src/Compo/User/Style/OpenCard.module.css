@@ -1,0 +1,155 @@
+/* Main Container */
+.cardContainer {
+  max-width: 700px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Loading & Error */
+.loading, .error {
+  text-align: center;
+  font-size: 18px;
+  color: #666;
+  margin-top: 20px;
+}
+
+/* Blog Image */
+.imageContainer {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.image:hover {
+  transform: scale(1.03);
+}
+
+/* Blog Title */
+.blogTitle {
+  font-size: 26px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Blog Author */
+.author {
+  font-size: 16px;
+  color: #777;
+  margin-bottom: 15px;
+}
+
+/* Blog Content */
+.content {
+  font-size: 18px;
+  color: #444;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+/* Like & Comment Buttons */
+.actions {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.likeButton {
+  background: #ff4757;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.likeButton:hover {
+  background: #e84118;
+}
+
+/* Comment Section */
+.commentSection {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.commentSection h3 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Individual Comment */
+.comment {
+  background: #f1f1f1;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.comment strong {
+  color: #333;
+}
+
+/* Comment Input */
+.commentInput {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-top: 10px;
+  font-size: 16px;
+  resize: none;
+}
+
+/* Comment Button */
+.commentButton {
+  background: #2ecc71;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: 0.3s;
+}
+
+.commentButton:hover {
+  background: #27ae60;
+}
+
+/* Back Button */
+.backButton {
+  background: #3498db;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  display: block;
+  margin: 20px auto 0;
+  transition: 0.3s;
+}
+
+.backButton:hover {
+  background: #2980b9;
+}

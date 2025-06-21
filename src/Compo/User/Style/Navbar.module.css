@@ -1,0 +1,119 @@
+/* Navbar Container */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333; /* Dark background */
+  padding: 15px 30px;
+  color: white;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Left Section (Logo) */
+.navbarLeft .logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+.navbarLeft .logo:hover {
+  color: #ffcc00;
+}
+
+/* Center Section (Navigation Links) */
+.navbarCenter {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.navLinks {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  padding: 0;
+}
+
+.navLinks li {
+  display: inline-block;
+}
+
+.navLinks a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+.navLinks a:hover {
+  background-color: #ffcc00;
+  color: #333;
+}
+
+/* Right Section (Login/Logout Buttons) */
+.navbarRight {
+  display: flex;
+  align-items: center;
+}
+.logo {
+  display: block;
+  width: 120px; /* Adjust size */
+  height: 50px;
+  background-image: url("https://e7.pngegg.com/pngimages/586/42/png-clipart-blogger-wordpress-com-web-feed-blog-text-trademark.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+ 
+}
+
+.loginBtn, .logoutBtn {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.loginBtn {
+  background-color: #28a745; /* Green for login */
+  color: white;
+}
+
+.loginBtn:hover {
+  background-color: #218838;
+}
+
+.logoutBtn {
+  background-color: #dc3545; /* Red for logout */
+  color: white;
+}
+
+.logoutBtn:hover {
+  background-color: #c82333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbarCenter {
+    margin-top: 10px;
+  }
+
+  .navLinks {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .navbarRight {
+    margin-top: 10px;
+  }
+}

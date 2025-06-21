@@ -1,0 +1,159 @@
+/* ✅ Center the form on the screen */
+.formContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Full screen height */
+  background-color: #f8f9fa;
+  padding: 20px; /* Mobile-friendly padding */
+}
+
+/* ✅ Form Box */
+.formBox {
+  width: 100%;
+  max-width: 500px;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* ✅ Form Title */
+.formBox h2 {
+  text-align: center;
+  margin-bottom: 15px;
+  color: #333;
+  font-size: 22px;
+}
+
+/* ✅ Input Fields & Select */
+.inputField,
+.selectField,
+.textareaField,
+.fileInput {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s ease-in-out;
+}
+
+/* ✅ Focus Effect */
+.inputField:focus,
+.selectField:focus,
+.textareaField:focus,
+.fileInput:focus {
+  border-color: #28a745;
+  box-shadow: 0 0 5px rgba(40, 167, 69, 0.2);
+}
+
+/* ✅ Select Dropdown */
+.selectField {
+  cursor: pointer;
+  background: #f8f9fa;
+}
+
+/* ✅ Textarea */
+.textareaField {
+  resize: vertical;
+  min-height: 120px;
+}
+
+/* ✅ File Input */
+.fileInput {
+  cursor: pointer;
+  background: #f8f9fa;
+}
+
+/* ✅ Submit Button */
+.submitButton {
+  width: 100%;
+  padding: 12px;
+  background: #28a745;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 12px;
+  transition: background 0.3s ease-in-out;
+}
+
+.submitButton:hover {
+  background: #218838;
+}
+
+/* ✅ Media Previews */
+.previewContainer {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  gap: 10px;
+}
+
+/* ✅ Media Preview Item */
+.previewItem {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  border-radius: 5px;
+  overflow: hidden;
+  border: 1px solid #ddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ✅ Image & Video Previews */
+.imagePreview,
+.videoPreview {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.videoPreview {
+  background: black;
+}
+
+/* ✅ Remove Button for Previews */
+.removeButton {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background: red;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+}
+
+.removeButton:hover {
+  background: darkred;
+}
+
+/* ✅ Responsive Design */
+@media (max-width: 480px) {
+  .formBox {
+    padding: 15px;
+  }
+
+  .inputField,
+  .textareaField,
+  .fileInput {
+    padding: 10px;
+  }
+
+  .submitButton {
+    padding: 10px;
+  }
+}

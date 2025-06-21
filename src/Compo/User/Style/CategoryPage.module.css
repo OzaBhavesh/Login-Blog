@@ -1,0 +1,60 @@
+/* CategoryPage.module.css */
+
+.categoryPage {
+  padding: 20px;
+  background-color: #f9f9f9;
+  min-height: 100vh;
+}
+
+.categoryPage h1 {
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.blogList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.blogCard {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 300px;
+  padding: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blogCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.blogCard h3 {
+  margin-top: 0;
+  color: #444;
+  font-size: 1.25rem;
+}
+
+.blogCard p {
+  color: #666;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+.blogCard a {
+  display: inline-block;
+  margin-top: 10px;
+  text-decoration: none;
+  color: #27ae60;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.blogCard a:hover {
+  color: #2ecc71;
+}
